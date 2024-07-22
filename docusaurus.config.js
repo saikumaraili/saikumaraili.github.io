@@ -75,17 +75,16 @@ const config = {
           src: 'img/favicon.png',
         },
         items: [
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
+            to: 'https://github.com/sk-aili',
+            label: 'GitHub',
+            position: 'right',
+          },{
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/sk-aili',
-            label: 'GitHub',
-            position: 'right',
+            label: 'Resume',
           },
         ],
       },
@@ -93,20 +92,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
                 label: 'LinkedIn',
-                href: 'https://linkedin.com/in/saikumaraili',
+                to: 'https://linkedin.com/in/saikumaraili',
+              },
+              {
+                label: 'GitHub',
+                to: 'https://github.com/sk-aili',
               },
             ],
           },
@@ -116,10 +110,6 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/sk-aili',
               },
             ],
           },
