@@ -1,48 +1,49 @@
+import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'About Me',
+    imageSrc: require('@site/static/img/favicon.png').default,
+    description: <>
+    Hi, it's me, <b>Sai Kumar Aili</b>. I am a Machine Learning Engineer with experience in developing, deploying and maintaining scalable, flexible systems for core ML services. I have particular interests in statistical learning and building products. 
+    <br />
+    <br />
+    I am ambitious to continuously develop in ML and data analysis, and apply this knowledge to a vast range of fields.
+    </>
+  },
+  {
+    title: 'What I Do',
+    imageSrc: require('@site/static/img/techny-artificial-intelligence-icon.png').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <p>
+        I currently work at an AI healthcare startup. You can find some of my projects on 
+        my <a href="https://github.com/sk-aili">Github page</a>.
+      </p>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Skills',
+    imageSrc: require('@site/static/img/flexy-code-icon.png').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <p>
+        I have experience in Python, TensorFlow, Keras, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Flask, Docker, Kubernetes, AWS, GCP, Azure, SQL, NoSQL, Git, Linux, etc.
+      </p>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ imageSrc, title, description }) {
+
   return (
-    <div className={clsx('col col--4')}>
+    <div className="col col--4">
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imageSrc} className={clsx(styles.featureSvg)} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
@@ -54,8 +55,8 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((feature, idx) => (
+            <Feature key={idx} {...feature} />
           ))}
         </div>
       </div>
