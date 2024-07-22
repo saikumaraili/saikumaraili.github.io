@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://sk-aili.github.io',
+  url: 'https://saikumaraili.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sk-aili', // Usually your GitHub org/user name.
-  projectName: 'sk-aili.github.io', // Usually your repo name.
+  organizationName: 'saikumaraili', // Usually your GitHub org/user name.
+  projectName: 'saikumaraili.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -77,7 +77,7 @@ const config = {
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            to: 'https://github.com/sk-aili',
+            to: 'https://github.com/saikumaraili',
             label: 'GitHub',
             position: 'right',
           },{
@@ -100,7 +100,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                to: 'https://github.com/sk-aili',
+                to: 'https://github.com/saikumaraili',
               },
             ],
           },
