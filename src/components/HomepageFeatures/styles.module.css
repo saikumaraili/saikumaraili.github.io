@@ -1,0 +1,18 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: auto; /* Adjusts height automatically to maintain aspect ratio */
+  max-width: 100%; /* Ensures the image does not exceed the container's width */
+  width: 100px; /* Default width set to 60% of the original intended size */
+}
+
+@media (max-width: 768px) {
+  .featureSvg {
+    width: 120px; /* 60% of the original 200px width */
+  }
+}
