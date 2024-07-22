@@ -34,7 +34,7 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Machine Learning Engineer<head />">
-      <HomepageHeader />
+      <HomepageHeader title={siteConfig.title} tagline={siteConfig.tagline} />
       <main>
         <HomepageFeatures />
       </main>
